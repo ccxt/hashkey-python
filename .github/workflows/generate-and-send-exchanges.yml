@@ -9,7 +9,7 @@ jobs:
   transfer-step:
     strategy:
       matrix:
-        exchange_name: ['hashkey'] # ['binance', 'bingx', 'bitget', 'bitmart', 'bitmex', 'bybit', 'coinex', 'cryptocom', 'gate', 'hashkey', 'htx', 'hyperliquid', 'kucoin', 'kucoinfutures', 'mexc', 'okx', 'woo', 'woofipro']
+        exchange_name: ['binance', 'bingx', 'bitget', 'bitmart', 'bitmex', 'bybit', 'coinex', 'cryptocom', 'gate', 'hashkey', 'htx', 'hyperliquid', 'kucoin', 'kucoinfutures', 'mexc', 'okx', 'woo', 'woofipro']
     runs-on: ubuntu-latest
     if: contains(github.event.head_commit.message, '[TRANSFER]')
     steps:
